@@ -8,7 +8,7 @@ module.exports = {
   KNEXFILE: {
     client: "mysql",
     connection: {
-      host: "157.230.32.184",
+      host: "127.0.0.1",
       port: "8080",
       user: "root",
       password: "", 
