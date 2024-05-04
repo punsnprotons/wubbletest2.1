@@ -81,7 +81,7 @@ app.use((error, req, res, next) => { // error middleware - 200s should not reach
     message = process.env.NODE_ENV === 'development' ? error.stack : error.message
   } else if (typeof error === 'string') {
     message = error
-  } else if (error?.toString) {
+  } else if (error && error.toString) {
     message = error.toString()
   }
   return (!res.headersSent) ? res.status(500).json({ message }) : next()
