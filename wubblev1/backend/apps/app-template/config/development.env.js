@@ -9,8 +9,8 @@ module.exports = {
     connection: {
       host: "157.230.32.184",
       port: "3306",
-      user: "wubbleadmin",
-      password: "wubbleadmin@Wubble999", 
+      user: "root",
+      password: "", 
       database: "wubble_db4",
       timezone: "Z",
     },
