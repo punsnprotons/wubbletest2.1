@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #0E0812; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  /* background */
+  --wbl-page-bg: #0E0812;
+  --wbl-surface-bg: #262029;
+  --wbl-input-bg: #2E2633;
+  --wbl-dropdown-menu-bg: #492A5E;
+
+  /* outline */
+  --wbl-outline-blue1: #4A8E95;
+  --wbl-outline-blue2: #6BCBD6;
+  --wbl-outline-grey: #797979;
+  --wbl-outline-dark: #1c181f;
+
+  /* font color */
+  --wbl-error: #DE90A8;
+  --wbl-error2: #F44336;
+  --wbl-font-primary: #F8F8F8;
+  --wbl-font-secondary: #9C9C9C;
+  --wbl-font-yellow: #FBC013;
+  --wbl-font-orange: #F16128;
+  --wbl-font-link: #C5C5C5;
+  --wbl-footer-mbl: #40484C;
+
+  /* font size */
+  --wbl-headline-title: 22px;
+  --wbl-headline-small: 20px;
+  --wbl-body: 16px;
+  --wbl-label-medium: 14px;
+  --wbl-label-small: 12px;
+
+  /* button color */
+  --wbl-btn-primary: linear-gradient(180deg, #F16128 0%, rgba(241, 97, 40, 0.00) 100%);
+  --wbl-btn-secondary: rgba(251, 192, 19, 0.20);
+  --wbl-btn-hover: linear-gradient(180deg, #F16128 0%, #893794 100%);
+}
+
+.bg-1 {
+  background-image: url('./assets/images/wbl-bg-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-2 {
+  background-image: url('./assets/images/wbl-bg-2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* avoid input bg color change when autofill */
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 50px var(--wbl-input-bg) inset !important;
+}
+
+@media screen and (max-width: 600px) {
+  /* .bg-1 {
+    background-size: cover;
+  } */
+}

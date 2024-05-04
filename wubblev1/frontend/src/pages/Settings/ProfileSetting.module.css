@@ -1,0 +1,119 @@
+.profileSettingPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background-color: var(--wbl-page-bg);
+}
+
+.profileSettingContainer {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin-top: 110px;
+  margin-bottom: 120px;
+}
+
+.InputLabel {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.navLogoBox {
+  position: absolute;
+  background-color: var(--wbl-page-bg);
+  height: 46px;
+  top: 20px;
+}
+
+.navLogo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.navLogoContainer {
+  height: 100%;
+  width: auto;
+  position: relative;
+}
+
+.firstForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 48%;
+}
+
+.disabledInput {
+  background: linear-gradient(0deg, rgba(121, 121, 121, 0.3), rgba(121, 121, 121, 0.3));
+}
+
+.mandatory {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.mandatorySq {
+  width: 21px;
+  height: 21px;
+  background-color: var(--wbl-outline-blue2);
+  border-radius: 3px;
+}
+
+.mandatory span {
+  font-size: 14px;
+  color: var(--wbl-font-secondary);
+}
+
+.changePassForm {
+  width: 48%;
+}
+
+@media screen and (max-width: 768px) {
+  .profileSettingPage {
+    min-height: 100vh;
+  }
+
+  .profileSettingContainer {
+    max-width: 90vw;
+  }  
+
+  .firstForm {
+    flex-direction: column;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .changePassForm {
+    width: 100%;
+  }
+}
+
+@media screen and (max-height: 896px) {
+  .profileSettingPage {
+    min-height: 120vh;
+  }
+}
+
+@media screen and (max-height: 812px) {
+  .profileSettingPage {
+    min-height: 125vh;
+  }
+}
+
+@media screen and (max-height: 568px) {
+  .profileSettingPage {
+    min-height: 160vh;
+  }
+}

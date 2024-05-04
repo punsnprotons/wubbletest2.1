@@ -1,0 +1,13 @@
+.btnPrimaryAction {
+    height: 45px;
+    color: var(--wbl-font-primary);
+    border-radius: 7px;
+    border: 1px solid #893794;
+    background: var(--wbl-btn-primary);
+    cursor: pointer;
+}
+
+.btnPrimaryAction:hover {
+    border: 1px solid #FBC013;
+    background: var(--wbl-btn-hover);
+}

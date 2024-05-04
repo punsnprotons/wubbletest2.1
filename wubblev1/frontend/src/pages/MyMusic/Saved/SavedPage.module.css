@@ -1,0 +1,77 @@
+.topActionBtn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainPlayer {
+    padding: 10px;
+    min-height: 100px;
+    border-radius: 7px;
+    margin-top: 10px;
+    background: var(--wbl-surface-bg);
+}
+
+.mainPlayerInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.deleteAndMerge {
+    display: flex;
+    gap: 80px;
+}
+
+.mergeParts {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.actionBtnMobileContainer,
+.deleteBtnMobile,
+.collapseWaveSurfer {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topActionBtn {
+        display: none;
+    }
+
+    .mainPlayer {
+        position: fixed;
+        width: 92vw;
+        z-index: 99;
+        bottom: 65px;
+        left: 0px;
+        margin-left: 1vw;
+    }
+
+    .actionBtnMobileContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .deleteBtnMobile {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .collapseWaveSurfer {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-left: auto;
+        margin-right: -7px;
+    }
+
+    .collapseIcon {
+        color: var(--wbl-font-secondary);
+    }
+
+}

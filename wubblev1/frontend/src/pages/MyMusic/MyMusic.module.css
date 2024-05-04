@@ -1,0 +1,50 @@
+.myMusicPage {
+    height: 120vh;
+    width: 100vw;
+}
+
+.myMusicContainer {
+    width: 75vw;
+    min-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 100px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.tabsContainer {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1366px) {
+    .myMusicPage {
+        height: 200vh;
+    }
+
+    .myMusicContainer {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width: 600px) {
+    .myMusicPage {
+        /* overflow-y: scroll; */
+        height: 100% !important;
+        margin-bottom: 400px;
+    }
+
+    .myMusicContainer {
+        width: 90vw;
+        top: 90px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .myMusicPage {
+        height: 170vh !important;
+    }
+}

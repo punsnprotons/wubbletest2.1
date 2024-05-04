@@ -1,0 +1,109 @@
+.signInPage {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--wbl-page-bg);
+}
+
+.signInContainer {
+    display: flex;
+    flex-direction: column;
+    width: 385px;
+}
+
+.mandatory {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.mandatorySq {
+    width: 21px;
+    height: 21px;
+    background-color: var(--wbl-outline-blue2);
+    border-radius: 3px;
+}
+
+.mandatory span {
+    font-size: 14px;
+    color: var(--wbl-font-secondary);
+}
+
+.logoContainer {
+    position: relative;
+    width: 191px;
+    height: 46px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.wblLogo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.greetingText {
+    text-align: center;
+}
+
+.signInForm {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.InputLabel {
+    margin-bottom: 10px;
+}
+
+.navLogoBox {
+    position: absolute;
+    background-color: var(--wbl-page-bg);
+    height: 60px;
+    top: 20px;
+}
+
+.navLogoContainer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.navLogo {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: left;
+}
+
+.eyeIconBtn {
+    width: 35px;
+    height: 35px;
+}
+
+.forgotPassword {
+    font-size: 16px;
+    color: var(--wbl-font-link);
+    text-decoration: underline;
+    margin-top: 10px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+@media screen and (max-width: 600px) {
+    .signInContainer {
+        width: 90vw;
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-height: 568px) {
+    .signInPage {
+        min-height: 130vh;
+    }
+}

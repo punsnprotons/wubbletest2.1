@@ -1,0 +1,207 @@
+.loadingContainer {
+    padding: 20px;
+    width: 300px;
+    background: #0E0812 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.logoBounce {
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-name: logoBounce;
+    animation-timing-function: ease;
+}
+
+@keyframes logoBounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.logoText {
+    margin-top: -20px;
+}
+
+.textContent {
+    text-align: center;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: var(--wbl-font-link);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.dotElastic {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    background-color: var(--wbl-font-link);
+    color: var(--wbl-font-link);
+    animation: dot-elastic 1s infinite linear;
+}
+
+.dotElastic::before,
+.dotElastic::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.dotElastic::before {
+    left: -15px;
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    background-color: var(--wbl-font-link);
+    color: var(--wbl-font-link);
+    animation: dot-elastic-before 1s infinite linear;
+}
+
+.dotElastic::after {
+    left: 15px;
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    background-color: var(--wbl-font-link);
+    color: var(--wbl-font-link);
+    animation: dot-elastic-after 1s infinite linear;
+}
+
+@keyframes dot-elastic-before {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(1, 1.5);
+    }
+
+    50% {
+        transform: scale(1, 0.67);
+    }
+
+    75% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes dot-elastic {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1, 1.5);
+    }
+
+    75% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes dot-elastic-after {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1, 0.67);
+    }
+
+    75% {
+        transform: scale(1, 1.5);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .loadingContainer {
+        width: 60vw;
+    }
+
+    .logoBounce {
+        width: 120px;
+        position: relative;
+    }
+
+    .logoBounce img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .logoText {
+        /* border: 1px solid red; */
+        margin-top: -10px;
+        width: 50%;
+        position: relative;
+    }
+
+    .logoText img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .textContent p {
+        font-size: 14px;
+    }
+
+    .dotElastic,
+    .dotElastic::after,
+    .dotElastic::before {
+        width: 5px;
+        height: 5px;
+    }
+
+    .dotElastic::before {
+        left: -10px;
+    }
+
+    .dotElastic::after {
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .loadingContainer {
+        width: 63vw;
+    }
+
+}

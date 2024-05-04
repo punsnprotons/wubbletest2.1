@@ -1,0 +1,80 @@
+.navContainer {
+    height: 90px;
+    width: 100vw;
+    background-color: var(--wbl-page-bg);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    /* border: 1px solid red; */
+}
+
+.navLogoBox {
+    height: 100%;
+    width: 185px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 7vw;
+    /* border: 1px solid red; */
+}
+
+.navProfile {
+    position: absolute;
+    /* cursor: pointer; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    right: 8vw;
+}
+
+.navLogoContainer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* border: 1px solid blue; */
+}
+
+.navLogo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.navMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 70px;
+}
+
+.navMenu p {
+    color: var(--wbl-font-primary);
+}
+
+.link {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--wbl-font-primary)
+}
+
+.navTabs {
+    width: max-content;
+}
+
+.navTabs a {
+    font-size: 16;
+    color: var(--wbl-font-primary);
+    min-width: auto;
+}
+
+.navTabs a svg {
+    width: calc(8px + (16 - 8) * ((100vw - 768px) / (1730 - 768)));
+    margin-right: 8px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}

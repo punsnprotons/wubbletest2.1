@@ -1,0 +1,166 @@
+.creationPage {
+  min-height: 100vh;
+}
+
+.creationContainer {
+  position: absolute;
+  width: 521px;
+  min-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 50px;
+}
+
+.resultContainer {
+  position: absolute;
+  width: 798px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid rgb(0, 0, 0, 0);
+}
+
+.lyricForm {
+  margin-top: 20px;
+}
+
+.lyricInput {
+  margin-top: 20px;
+}
+
+.promptCounter {
+  font-size: 12px;
+  color: var(--wbl-font-link);
+}
+
+.startOver {
+  margin-top: 20px;
+  color: var(--wbl-font-primary);
+  text-decoration: underline;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.InputLabel {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: var(--wbl-font-primary);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.luckyContainer {
+  width: 80%;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .creationPage {
+    min-height: 110vh;
+  }
+
+  .resultContainer {
+    width: 521px;
+    height: 100vh;
+  }
+
+  .creationContainer {
+    width: 521px;
+  }
+
+  .flexBetween {
+    width: 521px
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .creationPage {
+    min-height: 100vh;
+  }
+
+  .creationContainer {
+    position: relative;
+    width: 90vw;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 110px;
+    margin-top: 0px;
+  }
+
+  .flexBetween {
+    width: 90vw
+  }
+
+  .resultContainer {
+    position: relative;
+    width: 90vw;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    /* top: 100px; */
+    border: 1px solid rgb(0, 0, 0, 0);
+    padding-top: 110px;
+    margin-top: 0px;
+  }
+
+  .tooltipIcon {
+    position: absolute;
+    top: 15%;
+    right: -35px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .actionButtons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .creationPage {
+    min-height: 115vh;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .resultContainer {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .creationContainer {
+    top: 60px
+  }
+}
+
+@media screen and (max-height: 896px) {
+  .creationPage {
+    min-height: 110vh;
+  }
+}
+
+@media screen and (max-height: 812px) {
+  .creationPage {
+    min-height: 125vh;
+  }
+}
+
+@media screen and (max-height: 568px) {
+  .creationPage {
+    min-height: 150vh;
+  }
+}

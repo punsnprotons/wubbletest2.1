@@ -1,0 +1,81 @@
+.waitlistPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background-color: var(--wbl-page-bg);
+}
+
+.waitlistContainer {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin-top: 110px;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.searchInput {
+  width: 245.84px;
+}
+
+.tableHeadCell {
+  color: var(--wbl-outline-grey);
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.backBtn {
+  display: flex;
+  color: var(--wbl-font-secondary);
+  cursor: pointer;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.tableCell{
+  font-size: 16px;
+  /* overflow-x: ellipsis; */
+}
+
+@media screen and (max-width: 425px) {
+  .tableCell{
+    max-width: 45vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .waitlistPage {
+    min-height: 100vh;
+  }
+
+  .waitlistContainer {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (max-height: 896px) {
+  .waitlistPage {
+     min-height: 130vh;
+  }
+}
+
+@media screen and (max-height: 812px) {
+  .waitlistPage {
+     min-height: 130vh;
+  }
+}
+
+@media screen and (max-height: 568px) {
+  .waitlistPage {
+     min-height: 170vh;
+  }
+}

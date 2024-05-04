@@ -1,0 +1,15 @@
+.menuContainer {
+  /* position: absolute; */
+  position: fixed;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 99;
+}
+
+.navLogoBox {
+  width: 152.25px;
+  height: 46.96px;
+}

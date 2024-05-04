@@ -1,0 +1,85 @@
+.contactPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background-color: var(--wbl-page-bg);
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin-top: 110px;
+  margin-bottom: 130px;
+}
+
+.content {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.InputLabel {
+  margin-bottom: 7px;
+}
+
+.charMsgCounter {
+  font-size: 12px;
+  color: var(--wbl-font-link);
+  text-align: end;
+}
+
+.errorContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.errorMsgText {
+  font-size: 12px;
+  color: var(--wbl-error)
+}
+
+.sendBtn {
+  width: 100%;
+  text-align: center;
+}
+
+.sendBtn button {
+  margin-top: 20px;
+  width: 246px;
+  ;
+}
+
+@media screen and (max-width: 768px) {
+  .contactPage {
+    min-height: 100vh;
+  }
+
+  .contactContainer {
+    max-width: 90vw;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactContainer {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sendBtn button {
+    width: 100%;
+  }
+}

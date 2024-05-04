@@ -1,0 +1,63 @@
+.genreResultComp {
+    width: 99%;
+    margin-bottom: 20px;
+}
+
+.genreResult {
+    border-radius: 7px;
+    background-color: var(--wbl-surface-bg);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.playerPart {
+    width: 67%;
+}
+
+.playerInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+}
+
+.actionPart {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.playTime {
+    color: var(--wbl-font-primary);
+    font-size: 16px;
+}
+
+.titleSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.generateTime {
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .playerPart {
+        width: 62%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .genreResult {
+        flex-direction: column;
+    }
+
+    .generateTime {
+        font-size: 14px;
+    }
+}

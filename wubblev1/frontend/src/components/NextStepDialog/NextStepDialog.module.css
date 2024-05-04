@@ -1,0 +1,96 @@
+.container {
+    width: 375px;
+    min-height: 200px;
+    border-radius: 6px;
+    padding: 20px;
+    background-color: var(--wbl-dropdown-menu-bg);
+    position: relative;
+}
+
+.closeBtnContainer {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--wbl-surface-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.closeBtnContainer:hover {
+    background-color: var(--wbl-page-bg);
+}
+
+.closeBtn {
+    font-size: 20px;
+}
+
+.titleContainer {
+    width: 100%;
+}
+
+.title,
+.subTitle {
+    text-align: center;
+}
+
+.title {
+    font-size: 20px;
+    color: var(--wbl-font-link);
+}
+
+.subTitle {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.btnContainer {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.cancelBtn {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 70vw;
+    }
+
+    .btnContainer {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+    
+    .subTitle {
+        font-size: 14px;
+    }
+
+    .cancelBtn {
+        /* font-size: 14px; */
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 65vw;
+    }
+}
