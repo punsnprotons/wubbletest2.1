@@ -4,7 +4,7 @@ if (!global.APP_PATH) global.APP_PATH = ''
 if (global.CONFIG.TEST_ENV) console.log('TEST_ENV =', global.CONFIG.TEST_ENV)
 
 global.CONFIG.API_PORT = process.env.API_PORT || 3000
-global.CONFIG.WS_PORT = 3001
+global.CONFIG.WS_PORT = 3000
 global.CONFIG.WS_KEEEPALIVE_MS = 30000
 global.CONFIG.USE_GRAPHQL = true // false
 

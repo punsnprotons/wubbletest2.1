@@ -8,13 +8,24 @@ module.exports = {
     client: "mysql",
     connection: {
       host: "157.230.32.184",
-      port: "3000",
+      port: "3306",
       user: "root",
       password: "", 
       database: "wubble_db4",
       timezone: "Z",
     },
-    useNullAsDefault: true,
+    acquireConnectionTimeout: 1000000,
+    pool: {
+      min: 0,
+      max: 4,
+      acquireTimeoutMillis: 300000,
+      createTimeoutMillis: 300000,
+      destroyTimeoutMillis: 300000,
+      idleTimeoutMillis: 30000,
+      reapIntervalMillis:1000,
+      createRetryIntervalMillis: 2000
+    },
+    debug: false,
   },
 
   OPENAI_API_KEY: "sk-proj-IH1B1iBjxH90JuLiqHeAT3BlbkFJ6LGFyxsNKmwpSpydAbKK",
