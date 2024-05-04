@@ -9,9 +9,9 @@ module.exports = {
     client: "mysql",
     connection: {
       host: "157.230.32.184",
-      port: "3306",
-      user: "root",
-      password: "", 
+      port: "8080",
+      user: "wubbleadmin",
+      password: "wubbleadmin@Wubble999", 
       database: "wubble_db4",
       timezone: "Z",
     },
