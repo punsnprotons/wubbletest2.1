@@ -11,7 +11,7 @@ module.exports = {
       port: "3306",
       user: "wubbleadmin",
       password: "wubbleadmin@Wubble999", 
-      database: "wubble_db3",
+      database: "wubble_db4",
       timezone: "Z",
     },
     useNullAsDefault: true,
