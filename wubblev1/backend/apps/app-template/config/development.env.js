@@ -7,8 +7,9 @@ module.exports = {
   KNEXFILE: {
     client: "mysql",
     connection: {
-      host: "157.230.32.184",
-      port: "3306",
+       //host: "157.230.32.184",
+      //port: "3306",
+      socketPath: '/var/run/mysqld/mysqlx.sock',
       user: "wubbleadmin",
       password: "wubbleadmin@Wubble999", 
       database: "wubble_db4",
