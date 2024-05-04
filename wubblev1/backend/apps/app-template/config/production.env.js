@@ -7,11 +7,11 @@ module.exports = {
   KNEXFILE: {
     client: "mysql",
     connection: {
-      host: "localhost",
+      host: "157.230.32.184",
       port: "3306",
-      user: "tlc_prod_rds_user",
-      password: "Vision@123$", 
-      database: "wubble",
+      user: "wubbleadmin",
+      password: "wubbleadmin@Wubble999", 
+      database: "wubble_db3",
       timezone: "Z",
     },
     useNullAsDefault: true,
