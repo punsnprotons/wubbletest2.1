@@ -8,11 +8,11 @@ module.exports = {
   KNEXFILE: {
     client: "mysql",
     connection: {
-      host: "localhost",
+      host: "157.230.32.184",
       port: "3306",
       user: "root",
-      password: "",
-      database: "wubble_prod",
+      password: "", 
+      database: "wubble_db4",
       timezone: "Z",
     },
     useNullAsDefault: true,

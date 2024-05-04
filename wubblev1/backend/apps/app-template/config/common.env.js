@@ -11,7 +11,7 @@ const pems = selfsigned.generate(
   //   { name: 'organizationalUnitName', value: '' },
   //   { name: 'emailAddress', value: '' }
   // ],
-    [{ name: 'commonName', value: '192.168.18.8' }], // null, // can use null
+    [{ name: 'commonName', value: '157.230.32.184' }], // null, // can use null
   {
     // keySize: 1024, // the size for the private key in bits (default: 1024)
     days: 30, // how long till expiry of the signed certificate (default: 365)
