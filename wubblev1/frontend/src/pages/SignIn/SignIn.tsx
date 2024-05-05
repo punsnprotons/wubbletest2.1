@@ -134,6 +134,7 @@ const SignIn = () => {
 
     // handle sign in event
     const handleSignIn = async (): Promise<void> => {
+        alert('Request submitted');
         console.log('Request reached');
         try {
             const signInData: any = { email, password }
@@ -163,6 +164,7 @@ const SignIn = () => {
                 navigate('/song-creation')
             }
         } catch (e: any) {
+            console.log('Error recieved')
             console.log('error:', e)
             setIsLoading(false)
             if (e.data) {
