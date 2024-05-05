@@ -134,8 +134,11 @@ const SignIn = () => {
 
     // handle sign in event
     const handleSignIn = async (): Promise<void> => {
+        console.log('Request reached');
         try {
             const signInData: any = { email, password }
+            console.log(email);
+            console.log(password);
 
             const hasError = validate(signInData)
             console.log(hasError)
