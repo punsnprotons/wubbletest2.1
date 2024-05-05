@@ -137,7 +137,9 @@ const SignIn = () => {
         alert('Request submitted');
         console.log('Request reached');
         try {
+
             const signInData: any = { email, password }
+            alert('Email and pass entered');
             console.log(email);
             console.log(password);
 
@@ -166,6 +168,7 @@ const SignIn = () => {
         } catch (e: any) {
             console.log('Error recieved')
             console.log('error:', e)
+            console.log(e);
             setIsLoading(false)
             if (e.data) {
                 setToast({
